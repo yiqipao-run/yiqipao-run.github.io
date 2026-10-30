@@ -1,9 +1,42 @@
-const items = Array.isArray(window.YIQIPAO_ARTICLES) ? window.YIQIPAO_ARTICLES : [];
-const categories = ["全部", "一起跑周报", "年度接力赛", "人物对话", "训练营"];
+const sourceItems = Array.isArray(window.YIQIPAO_ARTICLES) ? window.YIQIPAO_ARTICLES : [];
+const itemFixes = {
+  "https://mp.weixin.qq.com/s/v7-6_RwLs2kG3cSxyRvabw": { date: "2026-05-24", category: "一起跑周报" },
+  "https://mp.weixin.qq.com/s/PeNdRHX7CDJ63QdN-XvnMA": { date: "2026-03-31", category: "训练营" },
+  "https://mp.weixin.qq.com/s/_C-_qGyNDtaHcrPNLoNM5A": { date: "2025-12-10", category: "训练营" },
+  "https://mp.weixin.qq.com/s/yBQ2CThhtf-3GtH7Gwfj-A": { date: "2025-10-05", category: "一起跑周报" },
+  "https://mp.weixin.qq.com/s/nqlDbk2mjkhiEgGvbPjLHg": { date: "2025-09-29", category: "一起跑周报" },
+  "https://mp.weixin.qq.com/s/N4XYfiR2y2aOKdKzqLKFsA": { date: "2025-09-28", category: "一起跑周报" },
+  "https://mp.weixin.qq.com/s/kY3ZZ082xENP6O7A7I5qeA": { date: "2024-02-19", category: "其他" },
+  "https://mp.weixin.qq.com/s/8eDuH3YeN0NZA908JCQ0ew": { date: "2024-01-15", category: "其他" },
+  "https://mp.weixin.qq.com/s/t50Z039W0eAihboa8BlWIg": { date: "2024-01-10", category: "其他" },
+  "https://mp.weixin.qq.com/s/RJZ22zLwpDMAg427iX2wzA": { category: "训练营" },
+  "https://mp.weixin.qq.com/s/OZNicbZ9kVmN_Bye4dJ14A": { category: "其他" },
+  "https://mp.weixin.qq.com/s/0fEXh24TbRkpxT_5LZKfIA": { category: "其他" },
+  "https://mp.weixin.qq.com/s/TjuElJ1KvlH-yAXRNBckuQ": { category: "其他" },
+  "https://mp.weixin.qq.com/s/FadQtITui-GyGHvon-cBpw": { category: "其他" },
+  "https://mp.weixin.qq.com/s/Qvagbw8VFMp0N_Ry3PRhxg": { category: "其他" },
+};
+const personDates = new Set([
+  "2024-09-24",
+  "2017-09-22",
+  "2016-05-24", "2016-05-27",
+  "2016-10-20", "2016-10-21",
+  "2016-11-24", "2016-11-25", "2016-11-28", "2016-11-29", "2016-11-30",
+  "2016-12-01", "2016-12-02", "2016-12-03", "2016-12-04", "2016-12-05",
+  "2016-12-06", "2016-12-07", "2016-12-08", "2016-12-09", "2016-12-13",
+]);
+const items = sourceItems.map((item) => {
+  const fixedItem = { ...item, ...(itemFixes[item.url] || {}) };
+  const category = personDates.has(fixedItem.date) || fixedItem.category === "人物对话"
+    ? "人物"
+    : fixedItem.category;
+  return { ...fixedItem, category };
+});
+const categories = ["全部", "一起跑周报", "年度接力赛", "人物", "训练营", "其他"];
 const fallbackImages = {
   "一起跑周报": "assets/weekly.png",
   "年度接力赛": "assets/relay.png",
-  "人物对话": "assets/interview.jpeg",
+  "人物": "assets/interview.jpeg",
   "训练营": "assets/training.png",
   "其他": "assets/relay.png",
 };
