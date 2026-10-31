@@ -1,4 +1,18 @@
-const sourceItems = Array.isArray(window.YIQIPAO_ARTICLES) ? window.YIQIPAO_ARTICLES : [];
+const importedItems = Array.isArray(window.YIQIPAO_ARTICLES) ? window.YIQIPAO_ARTICLES : [];
+const supplementalItems = [
+  {
+    title: "老梅约跑，一起跑",
+    category: "人物",
+    date: "2016-10-23",
+    image: "assets/laomei-2016.jpg",
+    summary: "介绍世纪公园跑友熟悉的老梅，以及他的跑步经历、训练理念与老梅约跑的故事。",
+    url: "https://mp.weixin.qq.com/s?__biz=MzI1MDMxOTU5OQ%3D%3D&mid=2247484607&idx=1&sn=75cf6f67c08081904edd92eb4dd93518",
+    readCount: 0,
+    likeCount: 0,
+  },
+];
+const sourceItems = [...importedItems, ...supplementalItems]
+  .sort((left, right) => (right.date || "0000-00-00").localeCompare(left.date || "0000-00-00"));
 const itemFixes = {
   "https://mp.weixin.qq.com/s/v7-6_RwLs2kG3cSxyRvabw": { date: "2026-05-24", category: "一起跑周报" },
   "https://mp.weixin.qq.com/s/PeNdRHX7CDJ63QdN-XvnMA": { date: "2026-03-31", category: "训练营" },
@@ -17,9 +31,12 @@ const itemFixes = {
   "https://mp.weixin.qq.com/s/Qvagbw8VFMp0N_Ry3PRhxg": { category: "其他" },
 };
 const personDates = new Set([
+  "2025-11-18", "2025-11-02",
   "2024-09-24",
   "2017-09-22",
-  "2016-05-24", "2016-05-27",
+  "2016-05-20", "2016-05-21", "2016-05-23", "2016-05-24", "2016-05-27",
+  "2016-06-03", "2016-06-06",
+  "2016-08-18", "2016-09-06", "2016-09-28",
   "2016-10-20", "2016-10-21",
   "2016-11-24", "2016-11-25", "2016-11-28", "2016-11-29", "2016-11-30",
   "2016-12-01", "2016-12-02", "2016-12-03", "2016-12-04", "2016-12-05",
