@@ -34,8 +34,8 @@ h1,h2,h3,p,figure { margin-top:0; }
 .schedule-title { font-size:20px; font-weight:700; }
 .schedule div { display:grid; }
 .schedule span { color:#a8cf70; font-size:12px; }
-.schedule strong { font-size:16px; }
-.schedule em { color:#fff; font-size:14px; font-style:normal; font-weight:700; }
+.schedule strong,.schedule em { font-size:16px; line-height:1.5; font-weight:700; }
+.schedule em { color:#fff; font-style:normal; }
 .weather-note { color:#abb2ab; font-size:12px; white-space:nowrap; }
 
 .archive { padding:100px max(24px,calc((100vw - var(--max))/2)) 120px; background:var(--white); }
