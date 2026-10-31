@@ -88,7 +88,8 @@ h1,h2,h3,p,figure { margin-top:0; }
 .outline-link:hover { border-color:var(--red); color:var(--red); }
 .about { padding:74px max(24px,calc((100vw - var(--max))/2)); background:var(--soft); }
 .about p:not(.eyebrow) { max-width:720px; margin-bottom:0; color:var(--muted); font-size:18px; }
-.about-link { display:inline-block; margin-top:22px; border-bottom:1px solid currentColor; color:var(--ink); font-weight:700; text-decoration:none; }
+.about-actions { display:flex; flex-wrap:wrap; gap:14px 28px; margin-top:22px; }
+.about-link { display:inline-block; border-bottom:1px solid currentColor; color:var(--ink); font-weight:700; text-decoration:none; }
 .about-link:hover { color:var(--red); }
 .contact { padding:84px max(24px,calc((100vw - var(--max))/2)); display:flex; align-items:center; justify-content:space-between; gap:64px; background:var(--white); }
 .contact-copy { max-width:650px; }
