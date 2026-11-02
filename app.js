@@ -1,6 +1,36 @@
 const importedItems = Array.isArray(window.YIQIPAO_ARTICLES) ? window.YIQIPAO_ARTICLES : [];
 const supplementalItems = [
   {
+    title: "周报：10.26-11.1",
+    category: "一起跑周报",
+    date: "2026-11-02",
+    image: "assets/weekly.png",
+    summary: "点击查看公众号原文。",
+    url: "https://mp.weixin.qq.com/s/3VBPsQXIyIUs2Hix77zALw",
+    readCount: 0,
+    likeCount: 0,
+  },
+  {
+    title: "网站上线啦：）",
+    category: "其他",
+    date: "2026-10-31",
+    image: "assets/article-2026-10-31-site-launch.jpg",
+    summary: "点击查看公众号原文。",
+    url: "https://mp.weixin.qq.com/s/uXfjZ89oodHBdEkKS4rx2w",
+    readCount: 0,
+    likeCount: 0,
+  },
+  {
+    title: "一起跑跑团档案",
+    category: "其他",
+    date: "2026-10-31",
+    image: "assets/article-2026-10-31-archive-entry.jpg",
+    summary: "点击查看公众号原文。",
+    url: "https://mp.weixin.qq.com/s/rdy_f03ctM7RtGxNiH6ovw",
+    readCount: 0,
+    likeCount: 0,
+  },
+  {
     title: "老梅约跑，一起跑",
     category: "人物",
     date: "2016-10-23",
