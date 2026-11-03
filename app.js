@@ -1,10 +1,10 @@
 const importedItems = Array.isArray(window.YIQIPAO_ARTICLES) ? window.YIQIPAO_ARTICLES : [];
 const supplementalItems = [
   {
-    title: "跑团档案使用小技巧",
+    title: "跑团档案使用指南/小技巧",
     category: "其他",
     date: "2026-11-03",
-    image: "",
+    image: "https://mmbiz.qpic.cn/sz_mmbiz_jpg/5NBvdAibibnFQkiciczXtbQrIORe8Pzd2V3ibGyXSlx4gtgBjJGEfDcFXxVjficYcibcGgn4Y0BtPCsXu73BrYTvgJSAiakdgiccORXG6aJvsPNP3pic4/0?wx_fmt=jpeg",
     summary: "从约跑号 001 到 1391，一起了解跑团十多年来沉淀的历史与档案，以及视频画面比例的调整方法。Enjoy!",
     url: "https://mp.weixin.qq.com/s/PUy-GCMXcbL5Qy0JdYky6Q",
     readCount: 0,
