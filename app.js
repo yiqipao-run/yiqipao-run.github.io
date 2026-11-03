@@ -90,6 +90,7 @@ const items = sourceItems.map((item) => {
   return { ...fixedItem, category };
 });
 const categories = ["全部", "一起跑周报", "年度接力赛", "人物", "训练营", "其他"];
+const categoryLabels = { "一起跑周报": "周报" };
 const fallbackImages = {
   "一起跑周报": "assets/weekly.png",
   "年度接力赛": "assets/relay.png",
@@ -129,7 +130,7 @@ function formatDate(date) {
 
 function renderFilters() {
   filters.innerHTML = categories.map((category) => `
-    <button type="button" class="filter-button ${category === activeCategory ? "active" : ""}" data-category="${category}">${category}</button>
+    <button type="button" class="filter-button ${category === activeCategory ? "active" : ""}" data-category="${category}">${categoryLabels[category] || category}</button>
   `).join("");
 }
 
