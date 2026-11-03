@@ -1,6 +1,16 @@
 const importedItems = Array.isArray(window.YIQIPAO_ARTICLES) ? window.YIQIPAO_ARTICLES : [];
 const supplementalItems = [
   {
+    title: "跑团档案使用小技巧",
+    category: "其他",
+    date: "2026-11-03",
+    image: "",
+    summary: "从约跑号 001 到 1391，一起了解跑团十多年来沉淀的历史与档案，以及视频画面比例的调整方法。Enjoy!",
+    url: "https://mp.weixin.qq.com/s/PUy-GCMXcbL5Qy0JdYky6Q",
+    readCount: 0,
+    likeCount: 0,
+  },
+  {
     title: "周报：10.26-11.1",
     category: "一起跑周报",
     date: "2026-11-02",
