@@ -162,7 +162,7 @@ function renderItems() {
       <article class="content-card">
         <img src="${escapeHtml(image)}" data-fallback="${escapeHtml(fallback)}" alt="${escapeHtml(item.title)}" loading="lazy" referrerpolicy="no-referrer" />
         <div>
-          <div class="card-topline"><span class="pill">${escapeHtml(item.category)}</span><span>${formatDate(item.date)}</span></div>
+          <div class="card-topline"><span class="pill">${escapeHtml(categoryLabels[item.category] || item.category)}</span><span>${formatDate(item.date)}</span></div>
           <h3>${escapeHtml(item.title)}</h3>
           <p>${escapeHtml(item.summary)}</p>
           <a class="card-link" href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">阅读公众号原文 <span aria-hidden="true">→</span></a>
