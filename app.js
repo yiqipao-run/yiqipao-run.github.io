@@ -1,6 +1,16 @@
 const importedItems = Array.isArray(window.YIQIPAO_ARTICLES) ? window.YIQIPAO_ARTICLES : [];
 const supplementalItems = [
   {
+    title: "周报11.2-11.8",
+    category: "一起跑周报",
+    date: "2026-11-11",
+    image: "https://mmbiz.qpic.cn/mmbiz_jpg/5NBvdAibibnFSATFCl2H3s47yzic0qSVyWMYFHJmzicicSZoib72S4qhOic2wXHJlN3FyHodt6ib8OibDyqzF5UobgLoOj2PCbkPicqQcuRxfJN8MbUCI/0?wx_fmt=jpeg",
+    summary: "上马不到一个月倒计时啦：）",
+    url: "https://mp.weixin.qq.com/s/OciywLFrNcuS6BlbiDjZdw",
+    readCount: 0,
+    likeCount: 0,
+  },
+  {
     title: "跑团档案使用指南/小技巧",
     category: "其他",
     date: "2026-11-03",
