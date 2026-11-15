@@ -1,6 +1,16 @@
 const importedItems = Array.isArray(window.YIQIPAO_ARTICLES) ? window.YIQIPAO_ARTICLES : [];
 const supplementalItems = [
   {
+    title: "周报：11.9-11.15",
+    category: "一起跑周报",
+    date: "2026-11-15",
+    image: "https://mmbiz.qpic.cn/sz_mmbiz_jpg/5NBvdAibibnFTfa9qgWvb1fCR93cMADhn4bUlibKLN3sVdOF3gk5cdOibtU7UMPItkGtWA9ZU3JXbnkQH0J8tpemVpBoBvltUpjNNcEHWguKaRY/0?wx_fmt=jpeg",
+    summary: "周末天气给力",
+    url: "https://mp.weixin.qq.com/s/bfIMDGzK16_6ZrE0V-Ko8Q",
+    readCount: 0,
+    likeCount: 0,
+  },
+  {
     title: "周报11.2-11.8",
     category: "一起跑周报",
     date: "2026-11-11",
