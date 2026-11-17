@@ -1,6 +1,16 @@
 const importedItems = Array.isArray(window.YIQIPAO_ARTICLES) ? window.YIQIPAO_ARTICLES : [];
 const supplementalItems = [
   {
+    title: "【训练营】冬季训练营开始报名啦！",
+    category: "训练营",
+    date: "2026-11-17",
+    image: "https://mmbiz.qpic.cn/mmbiz_jpg/5NBvdAibibnFSd6icOIWCLOCXicOz4Sy5dyqw2ovEpNYuNiaZQYUVFrFyxqMObYkfaGibia8yqmQU89jwcxz3gwry1Sn3UllEKsO5yGNqUn3mAEnxo/0?wx_fmt=jpeg",
+    summary: "2026冬季训练营开始报名啦！",
+    url: "https://mp.weixin.qq.com/s/fuwmjTFyfMBEWw5GvaVLoQ",
+    readCount: 0,
+    likeCount: 0,
+  },
+  {
     title: "周报：11.9-11.15",
     category: "一起跑周报",
     date: "2026-11-15",
