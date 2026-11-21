@@ -1,6 +1,16 @@
 const importedItems = Array.isArray(window.YIQIPAO_ARTICLES) ? window.YIQIPAO_ARTICLES : [];
 const supplementalItems = [
   {
+    title: "【对话】熊大：破过三，才知道最爱还是山野",
+    category: "人物",
+    date: "2026-11-21",
+    image: "https://mmbiz.qpic.cn/mmbiz_jpg/5NBvdAibibnFQSJcEDMOPwtB4YJmenm0LjgYHQ1FIkia9OCXjvWqu1bgAibXlVlIo2fLB21JyP4qPNyxNJrtNy5bfkibvHjtnJBcmecLkfZ0uAvo/0?wx_fmt=jpeg",
+    summary: "跑在山里",
+    url: "https://mp.weixin.qq.com/s/DkpZ3j0VDuxL0uRRZnmTdg",
+    readCount: 0,
+    likeCount: 0,
+  },
+  {
     title: "【训练营】冬季训练营开始报名啦！",
     category: "训练营",
     date: "2026-11-17",
